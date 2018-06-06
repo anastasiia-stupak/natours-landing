@@ -4,7 +4,7 @@
 ##### - It's NOT cross-browser, use the latest version of Google Chrome for better experience
 ##### - It's adaptive although
 
-#### You can find it deployed it live here:
+#### You can find it deployed live here:
 
 #### Technologies used:
 - HTML5
