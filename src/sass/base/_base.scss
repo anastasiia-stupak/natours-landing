@@ -1,0 +1,48 @@
+// Here goes basic settings for the entire project
+
+/* --------- BASIC RESET ----------- */
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+
+	/* all the elements should inherit this property from body */
+	box-sizing: inherit;
+}
+
+html {
+	// 10px / 16px (100%) = 62.5%
+	font-size: 62.5%;
+
+	// -------- TABLETS -----------
+
+	@include respond(tab-land) {
+		font-size: 56.25%;  // 1rem = 9px; 9/16 = 56.25%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 50%;  // 1rem = 8px; 8/16 = 50%
+	}
+
+	// -------- PHONES -----------
+
+	// should be the same as tab-port
+
+
+	// -------- BIG SCREENS -----------
+
+	@include respond(big-desktop) {
+		font-size: 75%;  // 1rem = 12px; 12/16 = 75%
+	}
+}
+
+body {
+	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
+}

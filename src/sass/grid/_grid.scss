@@ -1,0 +1,74 @@
+.row {
+	max-width: $grid-width;
+	margin: 0 auto;
+
+	&:not(:last-child){
+		margin-bottom: $vertical-indent;
+
+		@include respond(tab-port) {
+			margin-bottom: $vertical-indent-small;
+		}
+	}
+
+	@include respond(tab-port) {
+		max-width: 50rem;
+		padding: 0 3rem;
+	}
+
+	@include clearfix;
+
+	// ------------ COLUMNS STYLING --------------
+
+	[class^="col-"] {
+		float:left;
+
+		&:not(:last-child) {
+			margin-right: $horizontal-indent;
+
+			@include respond(tab-port) {
+				margin-right: 0;
+				margin-bottom: $vertical-indent-small;
+			}
+		}
+
+		@include respond(tab-port) {
+			width: 100% !important;
+		}
+	}
+
+	// ----- 2 column -----
+
+	.col-1-of-2 {
+		float:left;
+		width: calc((100% - #{$horizontal-indent}) / 2);
+	}
+
+	// ----- 3 column -----
+
+	.col-1-of-3 {
+		width: calc((100% - 2 * #{$horizontal-indent}) / 3);
+	}
+
+	.col-2-of-3 {
+		width: calc(2 *((100% - 2 * #{$horizontal-indent}) / 3) + #{$horizontal-indent});
+	}
+
+	// ----- 4 column -----
+
+	.col-1-of-4 {
+		width: calc((100% - 3 * #{$horizontal-indent}) / 4);
+	}
+
+	.col-2-of-4 {
+		width: calc(2 * ((100% - 3 * #{$horizontal-indent}) / 4) + #{$horizontal-indent});
+	}
+
+	.col-3-of-4 {
+		width: calc(3 * ((100% - 3 * #{$horizontal-indent}) / 4) + 2 * #{$horizontal-indent});
+	}
+}
+
+
+
+
+
