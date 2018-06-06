@@ -1,12 +1,12 @@
 # Natours Landing page
 
 ### This page is built using the latest CSS3 techniques and capabilities
-##### -- It's NOT cross-browser, use Google Chrome for better experience
-##### -- It's adaptive although
+##### - It's NOT cross-browser, use Google Chrome for better experience
+##### - It's adaptive although
 
-#### You can find it deployed here:
+#### You can find it deployed it live here:
 
 #### Technologies used:
-- HTML 5
-- CSS 3 (including animations)
-- GULP 4
+- HTML5
+- CSS3 (including animations)
+- Gulp 4
