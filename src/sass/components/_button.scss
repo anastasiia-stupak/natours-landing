@@ -8,7 +8,6 @@
 		border-radius: 10rem;
 
 		font-size: $default-font-size;
-		color: $color-gray-dark;
 		text-decoration: none;
 		text-transform: uppercase;
 
@@ -63,8 +62,20 @@
 	&--white {
 		background-color: $color-white;
 
+		color: $color-gray-dark;
+
 		&::after {
 			background-color: $color-white;
+		}
+	}
+
+	&--green {
+		background-color: $color-primary;
+
+		color: $color-white;
+
+		&::after {
+			background-color: $color-primary;
 		}
 	}
 
