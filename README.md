@@ -9,4 +9,5 @@
 #### Technologies used:
 - HTML5
 - CSS3 (including animations)
+- SASS
 - Gulp 4

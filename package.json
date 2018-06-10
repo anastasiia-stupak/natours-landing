@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
+    "start": "node server/server.js",
     "heroku-postbuild": "npm run build"
   },
   "author": "Anastasia Stupak",
