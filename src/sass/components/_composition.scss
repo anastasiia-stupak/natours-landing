@@ -1,6 +1,10 @@
 .composition {
 	position: relative;
 
+	@include respond(tab-port) {
+		text-align: center;
+	}
+
 	&__photo {
 		position: absolute;
 		width: 55%;
@@ -11,6 +15,16 @@
 
 		transition: all .2s;
 
+
+		@include respond(tab-port) {
+			position: relative;
+			width: 100%;
+			border-radius: 0;
+
+			box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+		}
+
+
 		&--p1 {
 			top: 0;
 			left: 0;
@@ -19,11 +33,21 @@
 		&--p2 {
 			top: 3rem;
 			left: 25rem;
+
+			@include respond(tab-port) {
+				top: 0;
+				left: 0;
+			}
 		}
 
 		&--p3 {
 			top: 10rem;
 			left: 10rem;
+
+			@include respond(tab-port) {
+				top: 0;
+				left: 0;
+			}
 		}
 
 
@@ -33,11 +57,15 @@
 			transform: scale(1.03);
 		}
 
+		@include respond(tab-port) {
+
+		}
 	}
 
 
 	&:hover &__photo:not(:hover) {
 		transform: scale(.9);
 	}
+
 
 }

@@ -19,6 +19,11 @@
 		text-align: center;
 
 		cursor: pointer;
+
+		@include respond(phone) {
+			top: 5rem;
+			right: 5rem;
+		}
 	}
 
 	&__icon {
@@ -87,6 +92,12 @@
 		background-image: radial-gradient($color-primary-light, $color-primary-dark);
 
 		transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+		@include respond(phone) {
+			top: 5.5rem;
+			right: 5.5rem;
+		}
+
 	}
 
 	&__checkbox:checked ~ &__background {
@@ -123,6 +134,10 @@
 
 	&__item {
 		margin: 1rem;
+
+		@include respond(pnone) {
+			margin: 0;
+		}
 	}
 
 	&__link {
@@ -147,6 +162,10 @@
 			text-decoration: none;
 
 			transition: all .4s;
+
+			@include respond(phone) {
+				font-size: 2rem;
+			}
 		}
 
 		&:hover,

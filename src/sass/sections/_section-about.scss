@@ -3,4 +3,8 @@
 	padding: 25rem 0;
 
 	background-color: $color-gray-light-1;
+
+	@include respond(tab-land) {
+		padding: 20rem 5rem;
+	}
 }
