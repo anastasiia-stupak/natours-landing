@@ -70,10 +70,10 @@ gulp.task('copy', gulp.parallel('copy:fonts', 'copy:images', 'copy:template'));
 // ------------ Watchers -----------
 // turn off before production on HEROKU
 
-gulp.task('watch', function () {
-	gulp.watch('src/sass/**/*.scss', gulp.series('styles:compile'));
-	gulp.watch('src/index.html', gulp.series('copy:template'));
-});
+// gulp.task('watch', function () {
+// 	gulp.watch('src/sass/**/*.scss', gulp.series('styles:compile'));
+// 	gulp.watch('src/index.html', gulp.series('copy:template'));
+// });
 
 // ------------ Default -----------
 
