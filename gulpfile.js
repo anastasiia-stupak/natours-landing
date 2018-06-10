@@ -9,17 +9,17 @@ const rimraf = require('rimraf');
 
 // ------- Server ---------
 // turn off before production on HEROKU
-
-gulp.task('server', function () {
-	browserSync.init({
-		server: {
-			port: 9000,
-			baseDir: "build/"
-		}
-	});
-
-	gulp.watch('build/**/*').on('change', browserSync.reload);
-});
+//
+// gulp.task('server', function () {
+// 	browserSync.init({
+// 		server: {
+// 			port: 9000,
+// 			baseDir: "build/"
+// 		}
+// 	});
+//
+// 	gulp.watch('build/**/*').on('change', browserSync.reload);
+// });
 
 // ------- Sass Compile ---------
 
@@ -82,6 +82,6 @@ gulp.task('watch', function () {
 
 gulp.task('default', gulp.series(
 	'clean',
-	gulp.parallel('styles:compile', 'copy'),
-	gulp.parallel('watch', 'server')
+	gulp.parallel('styles:compile', 'copy')
+	// gulp.parallel('watch', 'server')
 ));
