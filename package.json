@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp"
+    "build": "gulp",
+    "heroku-postbuild": "npm run build"
   },
   "author": "Anastasia Stupak",
   "license": "ISC",
@@ -18,5 +19,8 @@
     "live-server": "^1.2.0",
     "node-sass": "^4.9.0",
     "rimraf": "^2.6.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
   }
 }
