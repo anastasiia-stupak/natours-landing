@@ -4,7 +4,7 @@
 ##### - It's NOT cross-browser, use the latest version of Google Chrome for better experience
 ##### - It's adaptive although
 
-#### You can find it deployed live here: https://velgreen-natours-landing.herokuapp.com/
+#### [inactive] You can find it deployed live here: https://velgreen-natours-landing.herokuapp.com/
 
 #### Technologies used:
 - HTML5
